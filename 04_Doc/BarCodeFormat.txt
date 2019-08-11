@@ -1,0 +1,7 @@
+13112, 14640, 12592, 13875, 12596, 13360, 14646 => Received decimal value overmodbusTCP/IP
+
+3338,  3930,  3130,  3633,  3134,  3430,  3936  => HEX value of the same with '3' padded.
+   
+ 3 8    9 0    1 0     63     14    40     96     => decoded value without '3' padding
+
+38901063144096					=> scanned bar code data

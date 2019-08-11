@@ -171,7 +171,7 @@ void main()
 
     g_ui8SystemMode = SYS_MODE_NOTHING;
   
-    //unsigned int32 arr[200];
+    unsigned int32 arr[200];
     unsigned int16 ui16X = 0;
     
     // Reset WDT.

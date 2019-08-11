@@ -31,8 +31,6 @@
       <itemPath>../vmStateMachine_1.h</itemPath>
       <itemPath>../vmSystemConfig.h</itemPath>
       <itemPath>../vmTimerConfig.h</itemPath>
-      <itemPath>../../Common/vmM0Common.h</itemPath>
-      <itemPath>../../Common/vmM0CamUART.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LibraryFiles"
                    displayName="Library Files"

@@ -1,0 +1,167 @@
+
+ROM used:   26768/65536 (41%)
+            26768/65536 (41%) including unused fragments
+
+            2.2 Average locations per line
+            16.5 Average locations per statement
+
+RAM used:   2835/3648 (78%) at main() level
+            2922/3648 (80%) worst case
+
+Stack used: 3 worst case (2 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  526   188  12  ..\vmIMW_MCU1.c
+   32     0   0  ..\vmSystemConfig.h
+  947     0   0  ..\18F46K80.h
+   35     0   0  ..\vmPINConfig.h
+ 2175   745  46  ..\..\Common\vmRS485Config.h
+  133     0   0  ..\..\Common\vmCRCConfig.h
+  147     0   0  ..\..\Common\vmModbusGlobal.h
+  367     0   0  ..\..\Common\vmIBCGlobal.h
+  572     0   0  ..\vmTimerConfig.h
+  578   132   8  ..\..\Common\viShiftRegister.h
+   34     0   0  ..\vmM1Common.h
+  946     0   0  ..\..\Common\vmIBCConfig.h
+   13     0   0  ..\vmDigitalIOConfig.h
+   40     0   0  ..\..\Common\vmTime.h
+  154     0   0  C:\Program Files (x86)\PICC\drivers\time.h
+  326   128   8  C:\Program Files (x86)\PICC\drivers\stdlibm.h
+   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+   76    13   1  C:\Program Files (x86)\PICC\drivers\memmgmt.c
+  342   131   8  C:\Program Files (x86)\PICC\drivers\time.c
+  265     0   0  ..\vmCommon.h
+   81    23   1  ..\vmDigitalIOPortPinConfig.h
+  422   145   9  ..\vmGSMM66Config.h
+  986     0   0  ..\vmGSMM66_GPRSConfig.h
+ 1116     0   0  ..\vmSIM900_GPRSConfig.h
+ 1540     0   0  ..\viRS485Config.h
+  243   101   6  ..\vmIBCProcessM1.h
+  102    19   1  ..\vmCalibrationConfig.h
+  105     0   0  ..\viModbusGlobal.h
+----- -----
+12335  1625 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     52   0    1             @delay_ms1
+0     12   0    0             @PUTCHARI_BIU_2
+0    272   1    0             @const683
+0    272   1    0             @const686
+0    110   0    8    354  8.6  ModbusCRC16
+0    180   0   13   1025  9.5  calculateCrc
+0     10   0    0     37  1.7  SetModeNothing
+0     12   0    0     37  1.7  SetModeHome
+0     12   0    0     37  1.7  SetModeCalibration
+0     12   0    0     32  1.6  SetModePreProduction
+0     12   0    0     32  1.6  SetModeProduction
+0     12   0    0     37  1.7  SetModeConfiguration
+0    134   0    8    345  5.8  InitializeDataQueue
+0     34   0    5             @MUL1616
+0     66   0    8    193  5.0  CopyIBCMsg
+0    500   1    8    908  9.7  InsertIBCMsgQueue
+0     52   0    3             @DIV88
+0    234   0    6    460  7.1  DeleteIBCMsgQueue
+0     40   0    3     83  3.5  IsMSGInIBCQueue
+0    800   1    5   3652  8.5  SendIBCMSGFromQ
+0     92   0    1    376  5.5  IBC_Tx_ISR
+0     40   0    0    313  3.8  IBC_Rx_ISR
+0    478   1    2   3585  7.6  IBC_Rx_Sampling_ISR
+0     20   0    0     84  1.7  Init1MSTimer
+0    402   1    1   1878  5.4  timer0_isr
+0     40   0    1    128  2.3  SetTimeout
+0     36   0    0             @MEMSET
+0     36   0    0    147  3.1  InitRS485RxInterrupt
+0     86   0    9    768  5.0  WriteToOneRegRS485
+0     98   0   11   1009  5.2  WriteToTwoRegRS485
+0    108   0   13   1163  5.4  WriteToThreeRegRS485
+0    126   0   13   1508  6.0  ReplyForTwoRegister
+0    180   0    2    875  6.8  RS485_RxByteReady_ISR2
+0    134   0    5    587  6.3  GetUART2Queue
+0     62   0    1    267  5.0  GetQueueLength
+0     10   0    0     61  2.3  EmptyQueue
+0    218   0   10    823  9.0  CheckValidityForReadReg
+0    150   0    8    519  5.2  SendRS485Response
+0    258   0    9   1076  7.2  SendRS485ResponseForMultipleRegWrite
+0   2282   4   14   8848 11.5  ProcessSingleRegister
+0    460   1    4    941  3.4  SendOneRegisterValues
+0    738   1    2   2050  3.9  SendTwoRegisterValues
+0    796   1    5   1785  3.5  ReplyTwoRegisterValues
+0   1298   2    7   5279 12.5  ProcessUART2ReceivedData
+0     26   0    1    134  1.0  SetRS485PortPinOfMicro
+0     32   0    0     57  1.9  ResetGSMM66RxBuffer
+0    616   1    5    873  3.9  CountDataSize
+0    844   2    7   1748  7.5  CheckURLInputByteLength
+0     88   0    7    189  4.3  StuffDummyTimeStamp
+0    238   0    4    398  4.7  InitializeGPRSMsgQueue
+0     92   0    1    333  5.1  IsGPRSMsgQueueEmpty
+0    606   1    2   1502  8.2  InsertInGPRSMsgQueue
+0     18   0    0     57  1.9  InitializeGPRSMsgHeader
+0    294   1    8    581  7.6  SetPDPContext
+0     26   0    0             @const1635
+0     44   0    2             @PSTRINGC_1
+0    294   1    8    581  7.6  ActivatePDP
+0     14   0    0             @const1640
+0    780   1   22   2419  9.5  ShowActivatedAddress
+0     14   0    0             @const1648
+0     50   0    0     63  1.8  SendGPRSConnectionQuery
+0     12   0    0             @const1652
+0    534   1   16   1316  7.8  CheckGPRSConnectionQueryResponse
+0     20   0    0             @const1661
+0     48   0    3             @PSTRINGCN_9600_31766_31767
+0    160   0    2             @PRINTF_U_9600_31766_31767
+0     98   0    0             @const1668
+0    222   0    9             @PRINTF_LU_9600_31766_31767
+0    204   0    1    606  6.1  SetHTTPURLParameter
+0     20   0    0             @const1673
+0   2910   5   58   3716  9.1  SetHTTPURLL
+0    146   0    0             @const1678
+0    172   0   13             @DIV3232
+0    222   0   12             @PRINTF_L32U_9600_31766_31767
+0     86   0    0             @const1684
+0     50   0    0     63  1.8  SendHTTPGetSessionRequest
+0     18   0    0             @const1687
+0    736   1   24   1950  7.7  CheckHTTPGETRequestResponse
+0      6   0    0     37  1.1  InitM66RxInterrupt
+0     60   0    2    125  3.4  GSMM66_Rx_ISR
+0      6   0    0             @const1708
+0     16   0    0             @const1709
+0     14   0    0             @const1710
+0     20   0    0             @const1711
+0     12   0    0             @const1712
+0    318   1    9    712  8.0  SendAtCommand
+0      4   0    0             @const1716
+0     12   0    0             @const1722
+0     38   0    0             @const1723
+0     38   0    0             @const1725
+0     38   0    0             @const1727
+0     36   0    0             @const1730
+0     98   0    1    336  4.6  ConnectGPRS
+0    878   2   13   3296 12.2  ProcessIBCMsg
+0    136   0    0   1109  3.9  Initialize
+0   4082   8    3   5014 10.5  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               62
+    Statements              1625
+    Comments                2129
+    Volume (V)              118912
+    Difficulty (D)          344.8
+    Effort to implement (E) 40998260
+    Time to implement (T)   632 hours, 41 minutes
+    Est Delivered Bugs (B)  40
+    Cyclomatic Complexity   287
+    Maintainability (MI)    95
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000F8   242  0  
+000FA-0FFFE  26522  38764  
+
+
+

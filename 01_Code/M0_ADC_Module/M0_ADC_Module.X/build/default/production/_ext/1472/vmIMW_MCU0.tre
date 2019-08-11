@@ -1,0 +1,133 @@
+ÀÄM0_ADC_Module
+   ÃÄMAIN  0/984  Ram=2
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄInitGlobalVariables  0/190  Ram=0
+   ³  ³  ÃÄInitializeDataQueue  0/134  Ram=8
+   ³  ³  ³  ÀÄ@MUL1616  0/34  Ram=5
+   ³  ³  ÃÄInitializeDataQueue  0/134  Ram=8
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄInitializeAvgWtQueue  0/66  Ram=3
+   ³  ³  ÃÄResetADCDataQ  0/36  Ram=1
+   ³  ³  ÀÄReadLCFFromEEPROM  0/42  Ram=2
+   ³  ³     ÀÄReadEEPROMInt16  0/104  Ram=7
+   ³  ÃÄInitSystemInterrupts  0/26  Ram=0
+   ³  ÃÄInitializeStateMachines  0/38  Ram=0
+   ³  ³  ÃÄInitialize_StateMachine_0  0/604  Ram=2
+   ³  ³  ÀÄInitialize_StateMachine_1  0/348  Ram=2
+   ³  ÃÄInitilizeStates  0/16  Ram=0
+   ³  ÃÄ@delay_ms1  0/54  Ram=1
+   ³  ÃÄInitDigitalIOPollingTimer  0/20  Ram=0
+   ³  ÃÄStartADCSplitAvg  0/88  Ram=0
+   ³  ÃÄGetADCSplitSum  0/172  Ram=0
+   ³  ³  ÀÄ@DIV3232  0/172  Ram=13
+   ³  ÃÄAfterADCMeanCalculationDone  0/294  Ram=0
+   ³  ³  ÃÄGetWeighingData  0/58  Ram=10
+   ³  ³  ³  ÀÄGetCalibratedWeight  0/512  Ram=18
+   ³  ³  ³     ÃÄ@MUL3232  0/98  Ram=14
+   ³  ³  ³     ÃÄ@DIV3232  0/172  Ram=13
+   ³  ³  ³     ÃÄ@MUL3232  0/98  Ram=14
+   ³  ³  ³     ÀÄ@DIV3232  0/172  Ram=13
+   ³  ³  ÃÄIBCSendWtInterMidData  0/116  Ram=13
+   ³  ³  ³  ÀÄInsertIBCMsgQueue  0/500  Ram=8
+   ³  ³  ³     ÃÄ@DIV88  0/54  Ram=3
+   ³  ³  ³     ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³     ÃÄCopyIBCMsg  0/66  Ram=8
+   ³  ³  ³     ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³     ÃÄCopyIBCMsg  0/66  Ram=8
+   ³  ³  ³     ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³  ³     ÀÄCopyIBCMsg  0/66  Ram=8
+   ³  ³  ÃÄIBCSendTareData  0/180  Ram=15
+   ³  ³  ³  ÃÄGetCalibratedWeight  0/512  Ram=18
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄInsertIBCMsgQueue  0/500  Ram=8
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄGetWeighingData  0/58  Ram=10
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄIBCSendWeighingData  0/304  Ram=15
+   ³  ³  ³  ÃÄInsertIBCMsgQueue  0/500  Ram=8
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄInsertIBCMsgQueue  0/500  Ram=8
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄInsertAvgWtQueue  0/434  Ram=12
+   ³  ³  ³  ÀÄ@DIV3232  0/172  Ram=13
+   ³  ³  ÃÄIBCSendProdModeAvgData  0/112  Ram=9
+   ³  ³  ³  ÀÄInsertIBCMsgQueue  0/500  Ram=8
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄResetADCDataQ  0/36  Ram=1
+   ³  ³  ÃÄIBCSendTareData  0/180  Ram=15
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄResetADCDataQ  0/36  Ram=1
+   ³  ³  ÃÄIBCSendCalibResetData  0/232  Ram=13
+   ³  ³  ³  ÃÄInsertIBCMsgQueue  0/500  Ram=8
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄInsertIBCMsgQueue  0/500  Ram=8
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÀÄResetADCDataQ  0/36  Ram=1
+   ³  ÃÄInsertIBCMsgQueue  0/500  Ram=8
+   ³  ³  ÀÄ*
+   ³  ÃÄIsMSGInIBCQueue  0/40  Ram=3
+   ³  ÃÄSendIBCMSGFromQ  0/792  Ram=5
+   ³  ³  ÀÄDeleteIBCMsgQueue  0/234  Ram=6
+   ³  ³     ÃÄ@MUL1616  0/34  Ram=5
+   ³  ³     ÀÄCopyIBCMsg  0/66  Ram=8
+   ³  ÃÄIsMSGInIBCQueue  0/40  Ram=3
+   ³  ÃÄProcessIBCMsg  0/604  Ram=9
+   ³  ³  ÃÄDeleteIBCMsgQueue  0/234  Ram=6
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄWriteLCFToEEPROM  0/38  Ram=4
+   ³  ³  ³  ÀÄWriteEEPROMInt16  0/124  Ram=5
+   ³  ³  ÀÄResetCalibTable  0/104  Ram=9
+   ³  ÃÄread_ext_adc  0/140  Ram=6
+   ³  ÃÄ@goto12005  0/38  Ram=0
+   ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³  ÀÄCheckState  0/612  Ram=20
+   ³     ÃÄ@MUL1616  0/34  Ram=5
+   ³     ÃÄHandleStateError  0/32  Ram=3
+   ³     ÃÄ@MUL1616  0/34  Ram=5
+   ³     ÃÄ@MUL1616  0/34  Ram=5
+   ³     ÃÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ÃÄ@MUL1616  0/34  Ram=5
+   ³     ³  ÀÄ@MUL1616  0/34  Ram=5
+   ³     ÃÄStateFunc_SM0_State1  0/34  Ram=2
+   ³     ³  ÃÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄResetADCDataQ  0/36  Ram=1
+   ³     ÃÄStateFunc_SM0_State2  0/30  Ram=2
+   ³     ³  ÀÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³     ÀÄ*
+   ³     ÃÄStateFunc_SM0_State3  0/10  Ram=2
+   ³     ³  ÀÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³     ÀÄ*
+   ³     ÃÄStateFunc_SM0_State4  0/30  Ram=2
+   ³     ³  ÃÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄResetADCDataQ  0/36  Ram=1
+   ³     ÃÄStateFunc_SM0_State5  0/10  Ram=2
+   ³     ³  ÀÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³     ÀÄ*
+   ³     ÃÄStateFunc_SM0_State6_7  0/72  Ram=2
+   ³     ³  ÀÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³     ÀÄ*
+   ³     ÃÄStateFunc_SM0_State8  0/10  Ram=2
+   ³     ³  ÀÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³     ÀÄ*
+   ³     ÃÄStateFunc_SM1_State1  0/10  Ram=2
+   ³     ³  ÀÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³     ÀÄ*
+   ³     ÃÄStateFunc_SM1_State2  0/40  Ram=2
+   ³     ³  ÀÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³     ÀÄ*
+   ³     ÃÄStateFunc_SM1_State3  0/38  Ram=2
+   ³     ³  ÀÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³     ÀÄ*
+   ³     ÃÄStateFunc_SM1_State4  0/14  Ram=2
+   ³     ³  ÀÄStateFunc_GenericState  0/354  Ram=8
+   ³     ³     ÀÄ*
+   ³     ÀÄHandleStateError  0/32  Ram=3
+   ÃÄIBC_Tx_ISR  0/84  Ram=1
+   ÃÄIBC_Rx_ISR  0/38  Ram=0
+   ÃÄIBC_Rx_Sampling_ISR  0/448  Ram=2
+   ÃÄ@GOTOPTR  0/14  Ram=0
+   ÀÄDigitalIOPolling_isr  0/510  Ram=2
+      ÀÄExecuteALLDOs  0/146  Ram=0

@@ -1,0 +1,40 @@
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\Common\vmCRCConfig.h:77:1:  Warning#203  Condition always TRUE
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\Common\vmCRCConfig.h:87:1:  Warning#203  Condition always TRUE
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmStateMachineForIMW_M0.h:158:15:  Warning#208  Function not void and does not return a value  StateFunc_GenericState
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmADCManager.h:141:15:  Warning#208  Function not void and does not return a value  StartADCSplitAvg
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmADCManager.h:196:16:  Warning#208  Function not void and does not return a value  GetADCSplitAvg
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmADCManager.h:385:16:  Warning#208  Function not void and does not return a value  GetStatisticalMean
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmDigitalIOConfig.h:110:17:  Warning#202  Variable never used:   g_unAllCounters
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmDigitalIOConfig.h:111:17:  Warning#202  Variable never used:   g_unDIStateFilter
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\Common\vmIBCConfig.h:175:27:  Warning#202  Variable never used:   g_ui8IBCDataToSend
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\Common\vmIBCConfig.h:176:27:  Warning#202  Variable never used:   g_fIBCCommStatus
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\Common\vmStateMachine.h:202:16:  Warning#202  Variable never used:   g_fSuctionWait
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\Common\vmStateMachine.h:203:16:  Warning#202  Variable never used:   g_ui16TimerCount
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\Common\vmStateMachine.h:282:20:  Warning#202  Variable never used:   ui16DOState
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\Common\vmStateMachine.h:284:20:  Warning#202  Variable never used:   i8TempState
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\Common\vmStateMachine.h:285:33:  Warning#202  Variable never used:   pStLookUptableNode
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmStateMachineForIMW_M0.h:104:15:  Warning#202  Variable never used:   g_fStateMac1StartCanTransfer
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmCalibration.h:76:21:  Warning#202  Variable never used:   g_stDynamicErrTable
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmCalibration.h:170:20:  Warning#202  Variable never used:   ui16EEPROMAddress
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:54:16:  Warning#202  Variable never used:   g_ui16PrevDynamicTareValue
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:55:16:  Warning#202  Variable never used:   g_i32StaticTareValue
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:57:16:  Warning#202  Variable never used:   g_i16CalibResetValue
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:58:16:  Warning#202  Variable never used:   g_i16CalibResetSumValue
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:59:16:  Warning#202  Variable never used:   g_i32ADCSumValue
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:60:16:  Warning#202  Variable never used:   g_i32ADCAvgValue
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:61:16:  Warning#202  Variable never used:   g_ui16ADCCalibValueEEPROM
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:62:16:  Warning#202  Variable never used:   g_ui16CalibPointEEPROM
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:63:16:  Warning#202  Variable never used:   g_i16CalibResetPrevValue
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmM0ADCModuleCommon.h:64:16:  Warning#202  Variable never used:   g_i16DynamicErrValue
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmADCManager.h:71:16:  Warning#202  Variable never used:   g_ui8DataCollectionState
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmADCManager.h:496:20:  Warning#202  Variable never used:   ui16TempTareWeight
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmADCManager.h:497:20:  Warning#202  Variable never used:   ui16TempDynErrValue
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmADCManager.h:668:22:  Warning#202  Variable never used:   i16AvgWeight
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmTimerConfig.h:39:16:  Warning#202  Variable never used:   g_uiCountSendADCData
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmTimerConfig.h:43:16:  Warning#202  Variable never used:   g_fDIChangeState
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmTimerConfig.h:44:16:  Warning#202  Variable never used:   g_fADCCurrState
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmTimerConfig.h:48:6:  Warning#202  Variable never used:   g_fRejectPusherPrevState
+D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\vmIMW_MCU0.c:174:20:  Warning#202  Variable never used:   arr
+      Memory usage:   ROM=17%      RAM=53% - 76%
+      0 Errors,  37 Warnings.
+Build Successful.

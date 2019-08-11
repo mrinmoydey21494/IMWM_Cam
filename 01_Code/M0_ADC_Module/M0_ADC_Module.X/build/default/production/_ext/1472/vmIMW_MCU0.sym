@@ -1,0 +1,460 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01C g_unDIState
+01D-01E g_unDOState
+01F-020 g_unAllCounters
+021-024 g_unDIStateFilter
+025     g_boardModeType
+026     g_boardModeTypePre
+027     g_manualModeActionOnHw
+028-029 g_ui16DIStatus
+02A-02B g_ui16DOStatus
+02C-02D g_ui16ErrorStatus
+02E     g_ui8IncrementIndex
+02F     g_fIBCSendLockStatus
+030-033 g_unIBCProdModeWtData
+034-037 g_unIBCProdModeTrData
+038-03B g_unIBCAvgNode
+03C-03F g_unIBCTolNode
+040-043 g_unIBCResetCalib
+044-047 g_unIBCResetCalibAck
+048-04B g_unIBCProdModeAvg
+04C-04F g_unIBCCurrLoadCellFactor
+050-053 g_unIBCResetCalibTare
+054-057 g_unIBCResetCalibWeight
+058     g_ui8IBCRcvBitCount
+059     g_ui8IBCTxBitCount
+05A     g_ui8IBCDataToSend
+05B     g_fIBCCommStatus
+05C-060 g_stIBCRcvData
+061-065 g_stIBCSendData
+066-0B0 g_ui8ArrSendSingleMSG
+0B1     g_fIBCDataReceived
+0B2     g_fIBCSendBusy
+0B3-0B4 g_unIBCRcvByteNode
+0B5-101 g_stIBCSendQueue
+102-14E g_stIBCRcvQueue
+14F     g_ui8fTimer0State
+150     g_i8RcvByteCount
+151     g_ui8NumberOfActiveMachines
+152-155 g_ui32AllDIsPreviousState
+156-157 g_ui32AllDOsCurrentState
+158-159 g_ui32AllDOsPreviousState
+15A-15B g_ui32AllCountersCurrentState
+15C-15D g_ui32AllCountersPreviousState
+15E     g_uiStateChange
+15F     g_fSuctionWait
+160-161 g_ui16TimerCount
+162-2F1 g_stArrStateMachines
+2F2     g_fStateMac1StartCanTransfer
+2F3-334 g_stCalibTable
+335-376 g_stTempCalibTable
+377-397 g_stDynamicErrTable
+398     g_ui8ADCMeanDataState
+399     g_fWtCalculationState
+39A-39B g_ui16CurrentBoxCount
+39C-39D g_ui16RejectionStatus
+39E     g_ui8SystemMode
+39F     g_fIntermediateDataSend
+3A0-3A1 g_ui16DynamicTareValue
+3A2-3A5 g_ui32DynamicTareADCValue
+3A6-3A7 g_ui16PrevDynamicTareValue
+3A8-3AB g_i32StaticTareValue
+3AC     g_fResetCalibStatus
+3AD-3AE g_i16CalibResetValue
+3AF-3B0 g_i16CalibResetSumValue
+3B1-3B4 g_i32ADCSumValue
+3B5-3B8 g_i32ADCAvgValue
+3B9-3BA g_ui16ADCCalibValueEEPROM
+3BB-3BC g_ui16CalibPointEEPROM
+3BD-3BE g_i16CalibResetPrevValue
+3BF-3C0 g_i16DynamicErrValue
+3C1-3C2 g_i16CurBoxWeight
+3C3     g_fRejectionMode
+3C4-3C9 g_stCurBatchInfo
+3CA-434 g_stAvgWtQueue
+435     g_fIgnore_TIMER
+436     g_ui8ADCMeanCalState
+437-43A g_ui32ADCCurMeanValue
+43B-43E g_ui32ADCCurSum
+43F-440 g_ui16ADCSumLoopCount
+441-442 g_i16LoadCellFactor
+443     g_ui8ADCScanningStatus
+444-447 g_ui32ADCValue
+448     g_ui8DataCollectionState
+449     g_fADCDataReadyStatus
+44A     g_ui8CurMaxDataCount
+44B-772 g_stADCDataQ
+773-774 g_ui16NoOfADCData
+775-778 g_ui32ADCAvg
+779-77A g_uiCountSendADCData
+77B     g_fDIChangeState
+77C     g_fADCCurrState
+77D-77E g_ui16IntmidDataSendTikCount
+77F-780 g_uiPusherDelayTikCount
+781     g_fPusherDelayStatus
+782     g_fRejectPusherPrevState
+783-784 g_ui16AfterBoxLeftDelayTimeCounter
+785     MAIN.i8StateMachineIndex
+786-78A MAIN.stIBCData
+78B-AAA MAIN.arr
+AAB     InitGlobalVariables.i8Count
+AAB-AAE IBCSendCalibResetData.ui32ADCMean
+AAB-AAE IBCSendTareData.ui32ADCMean
+AAB-AAC IsMSGInIBCQueue.pstIBCMSGQueue
+AAB     ProcessIBCMsg.i8LoopCount
+AAB-AAE GetWeighingData.ui32ADCMean
+AAB     read_ext_adc.i
+AAB-AAC IBCSendWeighingData.i16BoxWeight
+AAB-AAC InsertAvgWtQueue.i16LastWeight
+AAB-AAF IBCSendProdModeAvgData.stIBCDataNode
+AAB     @delay_ms1.P1
+AAB     SendIBCMSGFromQ.i8LoopCount
+AAB-AAC IBCSendWtInterMidData.i16BoxWeight
+AAB     Initialize_StateMachine_0.@SCRATCH1
+AAB     Initialize_StateMachine_1.@SCRATCH1
+AAB     MAIN.@SCRATCH1
+AAC-AAD InitializeDataQueue.pstIBCMSGQueue
+AAC-AAD ReadLCFFromEEPROM.ui16RetrieveLCF
+AAC-AB0 ProcessIBCMsg.stIBCRcvNode
+AAC     InitializeAvgWtQueue.ui8LoopCount
+AAC     SendIBCMSGFromQ.ui8Sequence
+AAC-AAF read_ext_adc.data
+AAC     Initialize_StateMachine_0.@SCRATCH2
+AAC     Initialize_StateMachine_1.@SCRATCH2
+AAC     MAIN.@SCRATCH2
+AAD-AAE IBCSendWeighingData.ui16BoxCount
+AAD-AB1 IBCSendWtInterMidData.stIBCDataNode
+AAD     SendIBCMSGFromQ.ui8TempData
+AAD-AAE CheckState.pstStateMachine
+AAD     InsertAvgWtQueue.i8LoopCount
+AAD     IsMSGInIBCQueue.@SCRATCH1
+AAD     InitializeAvgWtQueue.@SCRATCH1
+AAE     InitializeDataQueue.iLoopCount1
+AAE-AAF ReadEEPROMInt16.uiAddress
+AAE     InsertAvgWtQueue.i8MaxEntry
+AAE     SendIBCMSGFromQ.@SCRATCH1
+AAE     InitializeAvgWtQueue.@SCRATCH2
+AAF-AB2 InsertAvgWtQueue.i32Sum
+AAF-AB3 IBCSendWeighingData.stIBCDataNode
+AAF     InitializeDataQueue.iLoopCount2
+AAF-AB0 GetWeighingData.i16CalibratedWeight
+AAF     CheckState.i8StMacIndex
+AAF-AB3 IBCSendTareData.stIBCDataNode
+AAF-AB3 IBCSendCalibResetData.stIBCDataNode
+AAF     SendIBCMSGFromQ.@SCRATCH2
+AB0-AB1 ReadEEPROMInt16.uiValue
+AB0-AB3 CheckState.ui32DIState
+AB0     read_ext_adc.ui8Test
+AB0     IBCSendProdModeAvgData.i8LoopCount
+AB0     InitializeDataQueue.@SCRATCH1
+AB1-AB2 WriteLCFToEEPROM.i16CurrLoadCellFactor
+AB1-AB2 ResetCalibTable.i16TareValue
+AB1-AB2 DeleteIBCMsgQueue.pstIBCMSGQueue
+AB1-AB2 GetWeighingData.ui16TempTareWeight
+AB1     InitializeDataQueue.@SCRATCH2
+AB1     IBCSendProdModeAvgData.@SCRATCH1
+AB1     ProcessIBCMsg.@SCRATCH1
+AB2     IBCSendWtInterMidData.i8LoopCount
+AB2-AB3 ReadEEPROMInt16.uiTemp
+AB2     InitializeDataQueue.@SCRATCH3
+AB2     IBCSendProdModeAvgData.@SCRATCH2
+AB2     ProcessIBCMsg.@SCRATCH2
+AB3-AB4 WriteLCFToEEPROM.ui16CurrLoadCellFactor
+AB3-AB4 DeleteIBCMsgQueue.pstIBCData
+AB3     ResetCalibTable.i8LoopCount
+AB3-AB4 GetWeighingData.ui16TempDynErrValue
+AB3-AB4 IBCSendWtInterMidData.i16AvgWeight
+AB3     InitializeDataQueue.@SCRATCH4
+AB3     InsertAvgWtQueue.@SCRATCH1
+AB3     IBCSendProdModeAvgData.@SCRATCH3
+AB3     ProcessIBCMsg.@SCRATCH3
+AB4     IBCSendTareData.i8LoopCount
+AB4     IBCSendCalibResetData.i8LoopCount
+AB4-AB5 CheckState.ui16DOState
+AB4     IBCSendWeighingData.i8LoopCount
+AB4     ReadEEPROMInt16.@SCRATCH1
+AB4     ResetCalibTable.@SCRATCH1
+AB4     InsertAvgWtQueue.@SCRATCH2
+AB5-AB6 IBCSendWeighingData.i16AvgWeight
+AB5-AB6 WriteEEPROMInt16.uiAddress
+AB5-AB6 IBCSendTareData.i16TempDynTare
+AB5     DeleteIBCMsgQueue.@SCRATCH1
+AB5     ResetCalibTable.@SCRATCH2
+AB5     InsertAvgWtQueue.@SCRATCH3
+AB5     IBCSendWtInterMidData.@SCRATCH1
+AB5     IBCSendCalibResetData.@SCRATCH1
+AB6     CheckState.i8ExpNxtState
+AB6     DeleteIBCMsgQueue.@SCRATCH2
+AB6     ResetCalibTable.@SCRATCH3
+AB6     InsertAvgWtQueue.@SCRATCH4
+AB6     IBCSendWtInterMidData.@SCRATCH2
+AB6     IBCSendCalibResetData.@SCRATCH2
+AB7     CheckState.i8TempState
+AB7-AB8 InsertIBCMsgQueue.pstIBCMSGQueue
+AB7-ABA GetCalibratedWeight.ui32ADCMean
+AB7-AB8 WriteEEPROMInt16.uiValue
+AB7     ResetCalibTable.@SCRATCH4
+AB7     IBCSendWeighingData.@SCRATCH1
+AB7     IBCSendWtInterMidData.@SCRATCH3
+AB7     IBCSendTareData.@SCRATCH1
+AB7     IBCSendCalibResetData.@SCRATCH3
+AB8-AB9 CheckState.pStLookUptableNode
+AB8     ResetCalibTable.@SCRATCH5
+AB8     IBCSendWeighingData.@SCRATCH2
+AB8     IBCSendTareData.@SCRATCH2
+AB9     WriteEEPROMInt16.uiTemp
+AB9-ABA InsertIBCMsgQueue.pstIBCData
+AB9     ResetCalibTable.@SCRATCH6
+AB9     IBCSendWeighingData.@SCRATCH3
+AB9     IBCSendTareData.@SCRATCH3
+ABA     CheckState.ui8ExpNextState
+ABB-ABC HandleStateError.pstStateMachine
+ABB-ABC GetCalibratedWeight.i16ActualWeight
+ABB     InsertIBCMsgQueue.@SCRATCH1
+ABB     CheckState.@SCRATCH1
+ABC     InsertIBCMsgQueue.@SCRATCH2
+ABC     CheckState.@SCRATCH2
+ABD-AC0 GetCalibratedWeight.i32Temp
+ABD     HandleStateError.iStateIdx
+ABD-ABE CopyIBCMsg.pstIBCSource
+ABD     InsertIBCMsgQueue.@SCRATCH3
+ABD     CheckState.@SCRATCH3
+ABE     @DIV88.P1
+ABE     InsertIBCMsgQueue.@SCRATCH4
+ABE     CheckState.@SCRATCH4
+ABF     StateFunc_SM0_State3.i8StateMachine
+ABF     StateFunc_SM0_State5.i8StateMachine
+ABF-AC0 CopyIBCMsg.pstIBCDDest
+ABF     StateFunc_GenericState.i8StateMachine
+ABF     StateFunc_SM0_State2.i8StateMachine
+ABF     StateFunc_SM0_State1.i8StateMachine
+ABF     StateFunc_SM1_State4.i8StateMachine
+ABF     StateFunc_SM1_State3.i8StateMachine
+ABF     StateFunc_SM0_State4.i8StateMachine
+ABF     @DIV88.P1
+ABF     StateFunc_SM0_State6_7.i8StateMachine
+ABF     ResetADCDataQ.i8CollectionState
+ABF     StateFunc_SM0_State8.i8StateMachine
+ABF     StateFunc_SM1_State2.i8StateMachine
+ABF     StateFunc_SM1_State1.i8StateMachine
+ABF     CheckState.@SCRATCH5
+AC0     StateFunc_SM0_State8.i8State
+AC0     StateFunc_GenericState.i8State
+AC0     StateFunc_SM1_State2.i8State
+AC0     StateFunc_SM0_State1.i8State
+AC0     StateFunc_SM0_State2.i8State
+AC0     StateFunc_SM0_State5.i8State
+AC0     StateFunc_SM1_State3.i8State
+AC0     StateFunc_SM0_State3.i8State
+AC0     StateFunc_SM0_State4.i8State
+AC0     StateFunc_SM1_State4.i8State
+AC0     StateFunc_SM0_State6_7.i8State
+AC0     StateFunc_SM1_State1.i8State
+AC0     @DIV88.@SCRATCH1
+AC0     CheckState.@SCRATCH6
+AC1     CopyIBCMsg.i8LoopCount
+AC1-AC4 GetCalibratedWeight.ui32DiffValue
+AC1-AC2 StateFunc_GenericState.unFilter
+AC2     CopyIBCMsg.@SCRATCH1
+AC3-AC4 StateFunc_GenericState.unValue
+AC3     CopyIBCMsg.@SCRATCH2
+AC4     CopyIBCMsg.@SCRATCH3
+AC5-AC8 @DIV3232.P1
+AC5     StateFunc_GenericState.@SCRATCH1
+AC5     GetCalibratedWeight.@SCRATCH1
+AC6     StateFunc_GenericState.@SCRATCH2
+AC6     GetCalibratedWeight.@SCRATCH2
+AC7-AC8 @MUL1616.P1
+AC7     GetCalibratedWeight.@SCRATCH3
+AC8     GetCalibratedWeight.@SCRATCH4
+AC9-ACA @MUL1616.P1
+AC9-ACC @DIV3232.P2
+AC9-ACC @MUL3232.P3
+ACB     @MUL1616.@SCRATCH1
+ACD-AD0 @MUL3232.P1
+ACD     @DIV3232.@SCRATCH1
+ACE     @DIV3232.@SCRATCH2
+ACF     @DIV3232.@SCRATCH3
+AD0     @DIV3232.@SCRATCH4
+AD1     @DIV3232.@SCRATCH5
+AD1     @MUL3232.@SCRATCH1
+AD2     @MUL3232.@SCRATCH2
+AD3     @MUL3232.@SCRATCH3
+AD4     @MUL3232.@SCRATCH4
+AD5     @MUL3232.@SCRATCH5
+AD6     @MUL3232.@SCRATCH6
+AD7     IBC_Tx_ISR.@SCRATCH1
+AD7     IBC_Rx_Sampling_ISR.@SCRATCH1
+AD7     DigitalIOPolling_isr.@SCRATCH1
+AD8     IBC_Rx_Sampling_ISR.@SCRATCH2
+AD8     DigitalIOPolling_isr.@SCRATCH2
+F48     CCP_5_LOW
+F48     CCP_5
+F49     CCP_5_HIGH
+F4B     CCP_4
+F4B     CCP_4_LOW
+F4C     CCP_4_HIGH
+F4E     CCP_3_LOW
+F4E     CCP_3
+F4F     CCP_3_HIGH
+F51     CCP_2_LOW
+F51     CCP_2
+F52     CCP_2_HIGH
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBC     CCP_1
+FBC     CCP_1_LOW
+FBD     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000E2  IBC_Tx_ISR
+000136  IBC_Rx_ISR
+00015C  IBC_Rx_Sampling_ISR
+00031C  @GOTOPTR
+00032A  ExecuteALLDOs
+0003BC  DigitalIOPolling_isr
+0005BA  @MUL1616
+0005DC  InitializeDataQueue
+000662  InitializeAvgWtQueue
+0006A4  ResetADCDataQ
+0006C8  ReadEEPROMInt16
+000730  ReadLCFFromEEPROM
+00075A  InitGlobalVariables
+000818  InitSystemInterrupts
+000832  Initialize_StateMachine_0
+000A8E  Initialize_StateMachine_1
+000BEA  InitializeStateMachines
+000C10  InitilizeStates
+000C20  @delay_ms1
+000C56  InitDigitalIOPollingTimer
+000C6A  StartADCSplitAvg
+000CC2  @DIV3232
+000D6E  GetADCSplitSum
+000E1A  @MUL3232
+000E7C  GetCalibratedWeight
+00107C  GetWeighingData
+0010B6  @DIV88
+0010EC  CopyIBCMsg
+00112E  InsertIBCMsgQueue
+001322  IBCSendWtInterMidData
+001396  IBCSendTareData
+00144A  IBCSendWeighingData
+00157A  InsertAvgWtQueue
+00172C  IBCSendProdModeAvgData
+00179C  IBCSendCalibResetData
+001884  AfterADCMeanCalculationDone
+0019AA  IsMSGInIBCQueue
+0019D2  DeleteIBCMsgQueue
+001ABC  SendIBCMSGFromQ
+001DD4  WriteEEPROMInt16
+001E50  WriteLCFToEEPROM
+001E76  ResetCalibTable
+001EDE  ProcessIBCMsg
+00213A  read_ext_adc
+0021C6  HandleStateError
+0021E6  StateFunc_GenericState
+002348  StateFunc_SM0_State1
+00236A  StateFunc_SM0_State2
+002388  StateFunc_SM0_State3
+002392  StateFunc_SM0_State4
+0023B0  StateFunc_SM0_State5
+0023BA  StateFunc_SM0_State6_7
+002402  StateFunc_SM0_State8
+00240C  StateFunc_SM1_State1
+002416  StateFunc_SM1_State2
+00243E  StateFunc_SM1_State3
+002464  StateFunc_SM1_State4
+002472  CheckState
+0026D6  MAIN
+0026D6  @cinit1
+002808  @cinit2
+002AAE  @goto12005
+0136  NoBitCarry
+
+Project Directory:
+    D:\SVN\Work\Projects\Automation\InMotionWeighing\02_Designs\04_Firmware\IMWM_Cam\01_Code\M0_ADC_Module\M0_ADC_Module.X\
+
+Project Files:
+    ..\vmIMW_MCU0.c                                         [11-Aug-19 14:49  CRC=907882CC]
+    ..\vmSystemConfig.h                                     [11-Aug-19 14:22  CRC=22D353BE]
+    ..\18F46K80.h                                           [11-Aug-19 14:22  CRC=B1FEB7AA]
+    ..\vmPINConfig.h                                        [11-Aug-19 14:22  CRC=FB87B7AC]
+    ..\..\Common\vmIBCConfig.h                              [11-Aug-19 14:22  CRC=FCC7689E]
+    ..\..\Common\vmCRCConfig.h                              [11-Aug-19 14:22  CRC=D8321169]
+    ..\vmDigitalIOConfig.h                                  [11-Aug-19 14:22  CRC=FEFDDB88]
+    ..\..\Common\vmIBCGlobal.h                              [11-Aug-19 14:22  CRC=63F57C51]
+    ..\..\Common\vmADS1131.h                                [11-Aug-19 14:22  CRC=DD50069D]
+    ..\..\Common\vmEEPROMConfig.h                           [11-Aug-19 14:22  CRC=C69BEC9C]
+    ..\..\Common\vmStateMachine.h                           [11-Aug-19 14:22  CRC=59504B82]
+    ..\vmTimerConfig.h                                      [11-Aug-19 14:22  CRC=6809EF1C]
+    ..\vmStateMachineForIMW_M0.h                            [11-Aug-19 14:22  CRC=F9FD64D1]
+    ..\vmADCManager.h                                       [11-Aug-19 14:22  CRC=7391BFAA]
+    ..\vmCalibration.h                                      [11-Aug-19 14:22  CRC=D7AB5E56]
+    ..\vmM0ADCModuleCommon.h                                [11-Aug-19 14:22  CRC=2B7D3FF4]
+    ..\vmAverageWeightCalculation.h                         [11-Aug-19 14:22  CRC=617FE394]
+    ..\vmEEPROMConfig_Britania.h                            [11-Aug-19 14:22  CRC=A653DC1C]
+    ..\vmStateMachine_0.h                                   [11-Aug-19 14:22  CRC=BADAE075]
+    ..\vmStateMachine_1.h                                   [11-Aug-19 14:22  CRC=E6C5768B]
+    ..\vmIBCProcessM0.h                                     [11-Aug-19 14:22  CRC=E232BC4C]
+
+Source signature=DC9697A4
+
+Units:
+    ..\vmIMW_MCU0 (main)
+
+Compiler Settings:
+    Processor:      PIC18F46K80
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      8
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+    Predefined symbols:
+       #define __18F46K80 1
+
+Output Files:
+    XREF file:   build\default\production\_ext\1472\vmIMW_MCU0.xsym
+    Errors:      build\default\production\_ext\1472\vmIMW_MCU0.err
+    Ext Symbols: build\default\production\_ext\1472\vmIMW_MCU0.esym
+    INHX32:      build\default\production\_ext\1472\vmIMW_MCU0.hex
+    Symbols:     build\default\production\_ext\1472\vmIMW_MCU0.sym
+    List:        build\default\production\_ext\1472\vmIMW_MCU0.lst
+    Debug/COFF:  build\default\production\_ext\1472\vmIMW_MCU0.cof
+    Project:     vmIMW_MCU0.ccspjt
+    Call Tree:   build\default\production\_ext\1472\vmIMW_MCU0.tre
+    Statistics:  build\default\production\_ext\1472\vmIMW_MCU0.STA
